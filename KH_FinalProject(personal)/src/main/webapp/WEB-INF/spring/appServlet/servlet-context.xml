@@ -32,8 +32,8 @@
 	<beans:bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<beans:property name="driverClassName" value="${driverClassName}"></beans:property>
 		<beans:property name="url" value="${url}"></beans:property>
-		<beans:property name="username" value="puser1"></beans:property>
-		<beans:property name="password" value="puser1"></beans:property>
+		<beans:property name="username" value="${Username}"></beans:property>
+		<beans:property name="password" value="${Password}"></beans:property>
 	</beans:bean>
 	
 	<beans:bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
